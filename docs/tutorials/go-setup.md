@@ -136,3 +136,13 @@ go run hello-world.go
 
 !!! Note
     You could have alternatively used the `go build hello-world.go` command. This command compiles your program into an executable object file, much like the `gcc` command which compiles C programs. After your go executable is created, you can run it with the command `./hello-world`.
+
+7. Push your Changes to Github
+``` bash
+git add .
+git commit -m "Wrote Hello World in Go"
+git push origin main
+```
+
+8. Congratulations!!!
+You now know how to setup local and remote repositories, how to link them together, how to create a dev container, and how to configure it to run programs in Go!
