@@ -4,13 +4,16 @@
 * Reviewer: [William Millen](https://github.com/wvmillen)
 
 ## Prerequisites
-* **GitHub Account**
-* **Git**
-* **VS Code**
-* **Docker**
+* **GitHub Account**, which you can Create [here](https://github.com)
+* **Git**, which you can Download [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* **VS Code**, which you can Download [here](https://code.visualstudio.com)
+* **Docker**, which you can Download [here](https://www.docker.com/products/docker-desktop)
+* **Basic Command Line Knowledge**
 
 
 ## Creating your Local Repository
+Creating a local repository would allow you to systematically track changes made to your project over time, represented as commits, and rollback to previous versions if needed. This offers you a great deal of flexibility in experimenting with different features on your codebase.
+
 1. Open your Terminal
 2. cd into your Desired Parent Directory
 3. Create a New Directory and cd into it:
@@ -24,11 +27,14 @@ git init
 ```
 5. Add a README File and Commit it
 ``` bash
+echo "# Go Project" > README.md
 git add README.md
 git commit -m "Initial Commit"
 ```
 
 ## Creating your Remote Repository
+Creating a remote repository allows you to share the commits (read: changes) you have made on your local repository to a repository hosted on the cloud which other people can use as well. This allows you to collaborate with other developers on a project seamlessly, enabling you to add new functionalities through pushes to this remote repository.
+
 1. Login into your GitHub Account
 2. Create a New Repository by Setting:
     * Name: The Name of your Repository. Set this to `go-project`
@@ -41,9 +47,11 @@ git commit -m "Initial Commit"
 3. Copy the HTTP Link to your Repository
 
 ## Linking your Local and Remote Repositories
+Linking your local repository to your remote repository allows you to upload the commits you have made on your local repository to the remote repository for your collegues to see.
+
 1. In your Terminal, within your Local Repository's Directory, Add your GitHub Repository as a Remote, with the Alias of Origin:
 ``` bash
-git remote add origin https://github.com/<your-gh-username>/go-project
+git remote add origin https://github.com/<your-gh-username>/go-project.git
 ```
 2. Check your Local Branches:
 ``` bash
@@ -59,6 +67,8 @@ git push --set-upstream origin main
 ```
 
 ## Creating your Dev Container
+A development container is essentially an isolated enviornment that is created on your computer which has certain dependencies preinstalled and preconfigured. This is useful because it allows you and your teammates to work with the exact same dependencies in your project, eliminating errors caused by differing dependencies and their versions installed on your and your teammates' host machines.
+
 1. In the Terminal, within your Go Project Directory, Open the Directory in VS Code:
 ``` bash
 code .
@@ -90,7 +100,9 @@ code .
 6. Reopen your Project in a Dev Container by Pressing `Ctrl + Shift + P` or `Cmd + Shift + P` and then Typing and Running the Command: `Dev Containers: Reopen in Container`
 
 ## Writing "Hello World" in Go
-1. Check your Go Version:
+Go is a statically typed, compiled language that was developed by Google. It is loved for its high performance, simplicity, and concurrency support. Go is widely used for developing server-side applications, CLI tools, distributed systems and microservices, real-time systems, and high performance systems.
+
+1. Create a New Terminal in VS Code and Check your Go Version:
 ``` bash
 go version
 ```
