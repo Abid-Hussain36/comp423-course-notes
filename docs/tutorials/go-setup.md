@@ -80,7 +80,7 @@ code .
 ``` yaml
 {
   "name": "COMP423 Course Notes",
-  "image": "mcr.microsoft.com/devcontainers/python:latest",
+  "image": "mcr.microsoft.com/devcontainers/go:latest",
   "customizations": {
     "vscode": {
       "settings": {},
