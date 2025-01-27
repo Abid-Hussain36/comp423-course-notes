@@ -15,8 +15,8 @@
 Creating a local repository would allow you to systematically track changes made to your project over time, represented as commits, and rollback to previous versions if needed. This offers you a great deal of flexibility in experimenting with different features on your codebase.
 
 1. Open your Terminal
-2. cd into your Desired Parent Directory
-3. Create a New Directory and cd into it:
+2. `cd` into your Desired Parent Directory
+3. Create a New Directory and `cd` into it:
 ``` bash
 mkdir go-project
 cd go-project
